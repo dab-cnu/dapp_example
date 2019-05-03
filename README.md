@@ -11,7 +11,7 @@ cd [file_name]
 truffle unbox pet-shop
 ```
 
-모든 파일을 삽입한다.
+해당 디렉토리에 모든 파일을 삽입한다.
 ex) show_human 폴더 안의 contracts, migrations, src 폴더 모두를 생성한 디렉토리에 넣는다.
 
 
