@@ -6,7 +6,7 @@ mkdir [file_name]
 cd [file_name]
 ```
 
-해당 디렉토리에서 트로플 프로젝트 환경을 설치한다.
+해당 디렉토리에서 트플 프로젝트 환경을 설치한다.
 ```
 truffle unbox pet-shop
 ```
