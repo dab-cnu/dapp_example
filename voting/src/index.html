@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Park's Voting</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+      <h1>Park's Voting</h1>
+      <div class="loader">Loading...</div>
+      <br>
+      <hr>
+      <br>
+      <div class="contents">
+        <div>
+          <p class="owner"></p>
+          <table class="table">
+            <thead>
+              <th>NAME</th>
+              <th>Votes Count</th>
+            </thead>
+            <tbody class="candidateList"></tbody>
+          </table>
+          <hr>
+          <br>
+          <table class="table">
+            <thead>
+              <th>Address</th>
+              <th>Vote Right</th>
+            </thead>
+            <tbody class="voterList"></tbody>
+          </table>
+        </div>
+        <div class="yourAccount"></div>
+        <form onsubmit="App.vote(); return false;">
+          <div class="form-group">
+            <label for="candidateSelect">Select Candidate</label>
+            <select class="form-control" id="candidateSelect"></select>
+          </div>
+          <button type="submit" class="btn btn-primary">Vote</button>
+        </form>
+      </div>
+      <hr>
+      <br>
+      <form onsubmit="App.addCandidate()">
+        <label for="candidateName">Add Candidate</label><br>
+        <input type="text" id="candidateName"><br><br>
+        <input type="submit" value="Add" class="btn btn-primary">
+      </form>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
